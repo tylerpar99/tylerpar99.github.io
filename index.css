@@ -16,17 +16,6 @@
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
-
-.sub-container {
-    background: linear-gradient(to right, #57484f ,#ab7766, #e2a761);
-    box-shadow: 0 20px 20px #57484f;
-    perspective: 1000px;
-}
-
-.image {
-    transition: all 0.75s ease-out;
-}
-
 .imagecontain {
     perspective: 1000px;
     transform-style: preserve-3d;
