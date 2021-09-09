@@ -12,8 +12,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <bodyi>
-  <div>
-    <img class="image-fluid" width="100%" src="Images/codeBG.png">
+  <div class="row">
+    <img class="image-fluid images" src="Images/cover.png">
+    <img class="centered image-fluid" src="Images/codeBG.png">
   </div>
   <div class="text-center">
     <a href="Images/OfficialResume.pdf" target="_blank"><img src="Images/Resume.png" class="border-0" width="75" height="75"class="img-thumbnail" alt="Resume"/></a>
@@ -24,7 +25,7 @@
     <div class="row g-0 pt-5">
       <div class="col-md-4">
         <div class=>
-          <img src="Images/partont.png" class="img-fluid" alt="About Me">
+          <img src="Images/partont.png" class="img-fluid rounded mx-auto d-block" alt="About Me">
         </div>
       </div>
       <div class="col-md-8">
@@ -34,7 +35,7 @@
             Information Science at Berea College. I am experienced with various Programming Languages, development tools, 
             and procedures. Able to effectively self-manage during independent projects, as well as collaborate 
             as part of a productive team. Originally a Business major, I quickly switched to Computer Science 
-            after enjoying an introduction to app development class. I got the opportunity to Join the Student 
+            after enjoying an introduction to app development course. I got the opportunity to Join the Student 
             Software Development Team at Berea College, where my love for CS grew. I have since been enjoying web 
             development and open-source projects. In my free time, I enjoy playing and watching sports of all kinds, 
             coding, reading, and writing. During a quarantined 2020, I challenged myself to read more which led me 
@@ -63,7 +64,7 @@
       </div>
       <div class="col">
         <div class="card h-100">
-          <img src="Images/codeBG.png" class="card-img-top" alt="Portfolio">
+          <img src="Images/cover.png" class="card-img-top" alt="Portfolio">
           <div class="card-body">
             <h5 class="card-title">Personal Website</h5>
             <p class="card-text">My personal website host my portfolio and various links where you can find my Resume as well as my LinkedIn and Github profile.</p>
@@ -72,5 +73,23 @@
       </div>
     </div>
   </div>
+  <form action="contactForm.php" method="POST">
+    <div class="text-center">
+      <h3 class="text-center heading">Contact Me:</h3>
+      <div class="pt-1 border-0 text-light">
+        <input type="text" class="col-md-6 gradient" placeholder="Name" id="name" aria-label="First name">
+      </div>
+      <div class="pt-1 border-0 text-light">
+        <input type="text" class="col-md-6 gradient" placeholder="Email Address" id="mailFrom" aria-label="Last name">
+      </div>
+      <div class="pt-1 border-0 text-light">
+        <input type="text" id="subject" placeholder="Subject" class="col-md-6 gradient" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+      </div>
+      <div class="pt-1 border-0 text-light">
+        <textarea class="col-md-6 gradient" id="message" placeholder="Message" rows="8"></textarea>
+      </div>
+      <div class="pt-2"><button class="btn gradient pt-2" id="submit" type="submit">Send</button></div>
+    </div>
+</form>
 </body>
 </html>

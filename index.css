@@ -1,5 +1,16 @@
+* {
+    overflow-x: hidden;
+}
+
+.cover {
+    font-family: Hammersmith One;
+}
+
+.subcover {
+    font-family: Hammersmith One;
+}
+
 .paragraph {
-    transition: all 0.75s ease-out;
     font-family: Hammersmith One;
     font-size: 20;
     background: linear-gradient(to right, #57484f ,#ab7766, #57484f);
@@ -9,12 +20,12 @@
 }
 
 .heading {
-    transition: all 0.75s ease-out;
-    font-size: 48;
+    font-size: 45;
     font-family: Hammersmith One;
     background: linear-gradient(to right, #57484f ,#ab7766, #e2a761);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    overflow-y: hidden;
 }
 .imagecontain {
     perspective: 1000px;
@@ -22,6 +33,22 @@
 }
 
 .gradient {
-    background: linear-gradient(to right, #57484f ,#ab7766, #e2a761);
-    width: 100%;
+    background: linear-gradient(to right, #e2a761 ,#ab7766, #e2a761);
+}
+
+.centered {
+    position: absolute;
+    overflow: auto;
+  }
+
+.formborder {
+    border-style: groove;
+}
+
+.images {
+    overflow: hidden;
+}
+
+.nongradient {
+    background-color: #57484f;
 }
