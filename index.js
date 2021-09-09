@@ -16,3 +16,18 @@ $( document ).ready(function() {
         aboutmeimage.style.transform = 'translateZ(0px)';
     });
 });
+
+function contactMe() {
+    subject = $("#subject").val()
+    message = $("#message").val()
+    mailFrom = $("#name").val()
+    var link = "mailto:parton1999@yahoo.com"
+    + "&subject=" + encodeURIComponent(subject + " : " + mailFrom)
+    + "&body=" + encodeURIComponent(message);
+
+    window.location.href = link;
+
+    subject = $("#subject").val('')
+    message = $("#message").val('')
+    mailFrom = $("#name").val('')
+};

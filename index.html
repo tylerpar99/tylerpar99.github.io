@@ -73,23 +73,18 @@
       </div>
     </div>
   </div>
-  <form action="contactForm.php" method="post">
-    <div class="text-center">
-      <h3 class="text-center heading">Contact Me:</h3>
-      <div class="pt-1 border-0 text-light">
-        <input type="text" class="col-md-6 gradient" placeholder="Name" id="name" aria-label="First name">
-      </div>
-      <div class="pt-1 border-0 text-light">
-        <input type="text" class="col-md-6 gradient" placeholder="Email Address" id="mailFrom" aria-label="Last name">
-      </div>
-      <div class="pt-1 border-0 text-light">
-        <input type="text" id="subject" placeholder="Subject" class="col-md-6 gradient" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-      </div>
-      <div class="pt-1 border-0 text-light">
-        <textarea class="col-md-6 gradient" id="message" placeholder="Message" rows="8"></textarea>
-      </div>
-      <div class="pt-2"><button class="btn gradient pt-2" id="submit" type="submit">Send</button></div>
+  <div class="text-center">
+    <h3 class="text-center heading">Contact Me:</h3>
+    <div class="pt-1 border-0 text-light">
+      <input type="text" class="col-md-6 gradient" placeholder="Name" id="name" aria-label="First name">
     </div>
-</form>
+    <div class="pt-1 border-0 text-light">
+      <input type="text" id="subject" placeholder="Subject" class="col-md-6 gradient" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    </div>
+    <div class="pt-1 border-0 text-light">
+      <textarea class="col-md-6 gradient" id="message" placeholder="Message" rows="8"></textarea>
+    </div>
+    <div class="pt-2"><button class="btn gradient pt-2" id="submit" onclick="contactMe()">Send</button></div>
+  </div>
 </body>
 </html>
